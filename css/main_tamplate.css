@@ -8,6 +8,7 @@
 
 :root {
   --background-button: #1ae0ec;
+  --backgrond-special:#72b7bb;
   --bacckground-standart: #f3f3f3;
   --ff-standart: "Assistant", sans-serif;
   --ff-special: "Satisfy", cursive;
@@ -82,6 +83,209 @@
   .content li a:hover {
     color: var(--background-button);
     transform: scale(2);
+  }
+  * {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+  }
+  .aboutThePage {
+    background: var(--background-button);
+    padding: 12em;
+    padding-bottom: 3em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .aboutThePage .pressable {
+    margin: 5em;
+    margin-top: 2em;
+    margin-bottom: 0;
+    background: var(--backgrond-special);
+  }
+  .aboutThePage h1 {
+    font-size: 6em;
+    align-self: center;
+  }
+  .aboutThePage p {
+    font-family: var(--ff-standart);
+    font-size: 1.5em;
+    align-self: center;
+    width: 70%;
+    margin-top: 1em;
+  }
+  .codepics {
+    display: flex;
+    justify-content: center;
+    border: 1px solid #e7e5e5;
+    padding: 1em;
+    gap: 1em;
+    flex-wrap: wrap;
+  }
+  .codepics img {
+    transform: scale(1);
+    transition: transform 200ms ease-in-out;
+  }
+  .codepics img:hover {
+    transform: scale(1.1);
+  }
+  .pressable {
+    background: var(--backgrond-special);
+    padding: 1em;
+    border-radius: 2em;
+    border: none;
+    cursor: pointer;
+  }
+  .pressable:hover {
+    box-shadow: 2px 2px 5px 5px #888888;
+  }
+  .pressable a {
+    text-decoration: none;
+  }
+  .contactMe {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    padding-top: 7em;
+    padding-left: 50%;
+    padding-right: 10%;
+    padding-bottom: 0;
+    justify-content: flex-end;
+    align-items: flex-end;
+    overflow: hidden;
+    position: relative;
+    background: #333333;
+    background-size: 44% auto;
+  }
+  .contactMe .contactMe::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url(https://projects-place.com/wp-content/uploads/2023/04/Rectangle-41.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.5;
+    /* Adjust the opacity as needed */
+    z-index: 1;
+    /* Push the pseudo-element behind the content */
+  }
+  .contactMe p {
+    width: 38em;
+  }
+  .contactMe form {
+    align-self: flex-end;
+    direction: rtl;
+    padding: 2em;
+  }
+  .contactMe form input {
+    display: block;
+    width: 28em;
+    padding: 1em;
+    margin-bottom: 2em;
+    font-family: var(--ff-standart);
+    font-size: 1em;
+  }
+  .contactMe .pressable {
+    margin-top: 1em;
+    padding: 0.7em;
+    display: block;
+    width: 15em;
+    font-weight: bold;
+    font-size: 20px;
+  }
+  .contactMe a {
+    text-decoration: none;
+    font-family: var(--ff-standart);
+  }
+  .contactMe label {
+    display: block;
+  }
+  .formSubmitted {
+    display: flex;
+    flex-direction: column;
+    margin-top: 3em;
+    margin-bottom: 10%;
+  }
+  .formSubmitted h1, .formSubmitted p {
+    align-self: flex-end;
+    justify-self: flex-end;
+    margin: 1.5em;
+  }
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+  }
+  .contact-form h1, .contact-form p {
+    align-self: flex-end;
+    justify-self: flex-end;
+  }
+  .last {
+    font-family: var(--ff-standart);
+    width: 33em;
+    height: 5em;
+    font-size: 1em;
+  }
+  .formSubmitted {
+    position: absolute;
+    top: 20%;
+    left: 30%;
+    transform: scale(0);
+    pointer-events: none;
+    transition: transform 0.3s ease-in-out 0.4s;
+  }
+  .formSubmitted.show {
+    transform: scale(1);
+    pointer-events: auto;
+  }
+  .contact-form {
+    transform: scale(1);
+    transition: transform 0.3s ease-in-out;
+  }
+  .contact-form.hide {
+    transform: scale(0);
+    pointer-events: none;
+  }
+  .footer {
+    display: flex;
+    justify-content: center;
+    font-family: var(--ff-standart);
+    background: var(--background-button);
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  [class*=icon] {
+    margin-top: 2em;
+    display: flex;
+    flex-direction: column;
+    margin-left: 4em;
+    margin-right: 2em;
+  }
+  [class*=icon] a, [class*=icon] p {
+    justify-self: center;
+  }
+  [class*=icon] a {
+    display: flex;
+    justify-content: center;
+  }
+  .credit {
+    font-family: var(--ff-standart);
+    background: #333333;
+    color: white;
+    text-align: center;
+  }
+  .gallary {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #888888;
+  }
+  .gallary img {
+    padding: 5em;
+    width: 90%;
   }
 }
 @media (max-width: 900px) {
@@ -167,178 +371,302 @@
     color: var(--background-button);
     transform: scale(2);
   }
-}
-.aboutThePage {
-  background: var(--background-button);
-  padding: 10em;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.aboutThePage .pressable {
-  margin: 5em;
-  margin-bottom: 0;
-}
-
-.aboutThePage h1 {
-  font-size: 6em;
-  align-self: center;
-}
-
-.aboutThePage p {
-  font-family: var(--ff-standart);
-  font-size: 1.5em;
-  align-self: center;
-  width: 70%;
-  margin-top: 1em;
-}
-
-.pressable {
-  background: var(--background-button);
-  padding: 1em;
-  border-radius: 2em;
-  border: none;
-  cursor: pointer;
-}
-
-.pressable:hover {
-  box-shadow: 2px 2px 5px 5px #888888;
-}
-
-.pressable a {
-  text-decoration: none;
-}
-
-.codepics {
-  display: flex;
-  justify-content: center;
-  border: 1px solid #e7e5e5;
-  padding: 1em;
-  gap: 1em;
-  flex-wrap: wrap;
-}
-
-.codepics img {
-  transform: scale(1);
-  transition: transform 200ms ease-in-out;
-}
-
-.codepics img:hover {
-  transform: scale(1.1);
-}
-
-.contactMe {
-  display: flex;
-  flex-direction: column;
-  color: white;
-  padding-top: 7em;
-  padding-left: 50%;
-  padding-right: 10%;
-  padding-bottom: 0;
-  justify-content: flex-end;
-  align-items: flex-end;
-  overflow: hidden;
-  position: relative;
-  background: #333333;
-  background-size: 44% auto;
-}
-.contactMe .contactMe::before {
-  content: "";
+  * {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+  }
+  .aboutThePage {
+    background: var(--background-button);
+    padding: 12em;
+    padding-bottom: 3em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .aboutThePage .pressable {
+    margin: 5em;
+    margin-top: 2em;
+    margin-bottom: 0;
+    background: var(--backgrond-special);
+  }
+  .aboutThePage h1 {
+    font-size: 6em;
+    align-self: center;
+  }
+  .aboutThePage p {
+    font-family: var(--ff-standart);
+    font-size: 1.5em;
+    align-self: center;
+    width: 70%;
+    margin-top: 1em;
+  }
+  .codepics {
+    display: flex;
+    justify-content: center;
+    border: 1px solid #e7e5e5;
+    padding: 1em;
+    gap: 1em;
+    flex-shrink: 1;
+    flex-wrap: wrap;
+  }
+  .codepics img {
+    transform: scale(1);
+    transition: transform 200ms ease-in-out;
+  }
+  .codepics img:hover {
+    transform: scale(1.1);
+  }
+  .aboutMe {
+    display: flex;
+    flex-direction: column;
+    /* align-content: center; */
+    align-items: center;
+    padding-top: 7em;
+    margin-bottom: 8em;
+  }
+  .aboutMe img {
+    width: 12em;
+    border-radius: 50%;
+    margin: 3em;
+  }
+  .aboutMe h2 {
+    font-size: 2.125em;
+    font-family: var(--ff-special);
+    /* margin-bottom: 1em; */
+  }
+  .aboutMe p {
+    width: 70%;
+    font-family: var(--ff-standart);
+    font-size: larger;
+    margin: 1em;
+  }
+  .pressable {
+    background: var(--background-button);
+    padding: 1em;
+    border-radius: 2em;
+    border: none;
+    cursor: pointer;
+  }
+  .pressable:hover {
+    box-shadow: 2px 2px 5px 5px #888888;
+  }
+  .pressable a {
+    text-decoration: none;
+  }
+  .projects {
+    background: var(--bacckground-standart);
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 3em 0 3em;
+    justify-content: space-around;
+  }
+  .projects h1 {
+    width: 100%;
+    justify-self: center;
+    align-self: center;
+    text-align: center;
+    margin: 1em 0 1em 0;
+  }
+  .gallary {
+    position: relative;
+  }
+  /* #gallary,#play_ground{
+      margin-top: 1%;
+      // height: 7em;
+      // display: none;
   position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-image: url(https://projects-place.com/wp-content/uploads/2023/04/Rectangle-41.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  opacity: 0.5;
-  /* Adjust the opacity as needed */
-  z-index: 1;
-  /* Push the pseudo-element behind the content */
-}
-.contactMe p {
-  width: 38em;
-}
-.contactMe form {
-  align-self: flex-end;
-  direction: rtl;
-  padding: 2em;
-}
-.contactMe form input {
-  display: block;
-  width: 28em;
-  padding: 1em;
-  margin-bottom: 2em;
-  font-family: var(--ff-standart);
-  font-size: 1em;
-}
-.contactMe .pressable {
-  margin-top: 1em;
-  padding: 0.7em;
-  display: block;
-  width: 15em;
-  font-weight: bold;
-  font-size: 20px;
-}
-.contactMe a {
-  text-decoration: none;
-  font-family: var(--ff-standart);
-}
-.contactMe label {
-  display: block;
-}
-
-.formSubmitted {
-  display: flex;
-  flex-direction: column;
-  margin-top: 3em;
-  margin-bottom: 10%;
-}
-.formSubmitted h1,
-.formSubmitted p {
-  align-self: flex-end;
-  justify-self: flex-end;
-  margin: 1.5em;
-}
-
-.contact-form {
-  display: flex;
-  flex-direction: column;
-}
-.contact-form h1,
-.contact-form p {
-  align-self: flex-end;
-  justify-self: flex-end;
-}
-
-.last {
-  font-family: var(--ff-standart);
-  width: 33em;
-  height: 5em;
-  font-size: 1em;
-}
-
-.formSubmitted {
-  position: absolute;
-  top: 20%;
-  left: 30%;
-  transform: scale(0);
-  pointer-events: none;
-  transition: transform 0.3s ease-in-out 0.4s;
-}
-
-.formSubmitted.show {
-  transform: scale(1);
-  pointer-events: auto;
-}
-
-.contact-form {
-  transform: scale(1);
-  transition: transform 0.3s ease-in-out;
-}
-
-.contact-form.hide {
-  transform: scale(0);
-  pointer-events: none;
+  left: 50%;
+  // visibility: hidden;
+  } */
+  [class*=cards] {
+    justify-self: center;
+    background-color: #ffffff;
+    cursor: pointer;
+    margin-bottom: 2em;
+    height: -moz-fit-content;
+    height: fit-content;
+    border-radius: 10px 10px 10px 10px;
+    overflow: hidden;
+    transition: box-shadow 400ms ease-in-out;
+    text-decoration: none;
+  }
+  [class*=cards] .firstDiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+  [class*=cards] .secondDiv {
+    padding: 1em 6em;
+  }
+  [class*=cards] h2, [class*=cards] p {
+    padding: 0.3em;
+  }
+  [class*=cards] .img-container {
+    width: 100%;
+    overflow: hidden;
+  }
+  [class*=cards] img {
+    width: 100%;
+    transform: scale(1);
+    transition: transform 400ms ease-in-out, filter 400ms ease-in-out;
+  }
+  [class*=cards] button {
+    margin-bottom: 1em;
+  }
+  [class*=cards]:hover .firstDiv .img-container img {
+    transform: scale(1.2);
+    filter: brightness(0.8);
+  }
+  [class*=cards]:hover {
+    box-shadow: 2px 2px 5px 5px #888888;
+  }
+  .contactMe {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    padding-top: 7em;
+    padding-left: 50%;
+    padding-right: 10%;
+    padding-bottom: 0;
+    justify-content: flex-end;
+    align-items: flex-end;
+    overflow: hidden;
+    position: relative;
+    background: #333333;
+    background-size: 44% auto;
+  }
+  .contactMe .contactMe::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url(https://projects-place.com/wp-content/uploads/2023/04/Rectangle-41.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.5;
+    /* Adjust the opacity as needed */
+    z-index: 1;
+    /* Push the pseudo-element behind the content */
+  }
+  .contactMe p {
+    width: 22rem;
+  }
+  .contactMe form {
+    align-self: flex-end;
+    direction: rtl;
+    padding: 2em;
+  }
+  .contactMe form input {
+    display: block;
+    width: 17em;
+    padding: 1em;
+    margin-bottom: 2em;
+    font-family: var(--ff-standart);
+    font-size: 1em;
+  }
+  .contactMe .pressable {
+    margin-top: 1em;
+    padding: 0.7em;
+    display: block;
+    width: 15em;
+    font-weight: bold;
+    font-size: 20px;
+  }
+  .contactMe a {
+    text-decoration: none;
+    font-family: var(--ff-standart);
+  }
+  .contactMe label {
+    display: block;
+  }
+  .formSubmitted {
+    display: flex;
+    flex-direction: column;
+    margin-top: 3em;
+    margin-bottom: 10%;
+  }
+  .formSubmitted h1, .formSubmitted p {
+    align-self: flex-end;
+    justify-self: flex-end;
+    margin: 1.5em;
+  }
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+  }
+  .contact-form h1, .contact-form p {
+    align-self: flex-end;
+    justify-self: flex-end;
+  }
+  .last {
+    font-family: var(--ff-standart);
+    width: 20em;
+    height: 5em;
+    font-size: 1em;
+  }
+  .formSubmitted {
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    transform: scale(0);
+    pointer-events: none;
+    transition: transform 0.3s ease-in-out 0.4s;
+  }
+  .formSubmitted.show {
+    transform: scale(1);
+    pointer-events: auto;
+  }
+  .contact-form {
+    transform: scale(1);
+    transition: transform 0.3s ease-in-out;
+  }
+  .contact-form.hide {
+    transform: scale(0);
+    pointer-events: none;
+  }
+  .footer {
+    display: flex;
+    justify-content: center;
+    font-family: var(--ff-standart);
+    background: var(--background-button);
+    height: -moz-fit-content;
+    height: fit-content;
+    flex-wrap: wrap;
+  }
+  [class*=icon] {
+    margin-top: 2em;
+    display: flex;
+    flex-direction: column;
+    margin-right: 2em;
+  }
+  [class*=icon] a, [class*=icon] p {
+    justify-self: center;
+    text-align: center;
+  }
+  [class*=icon] a {
+    display: flex;
+    justify-content: center;
+  }
+  .gallary {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #888888;
+  }
+  .gallary img {
+    padding: 5em;
+    width: 90%;
+  }
+  .credit {
+    font-family: var(--ff-standart);
+    background: #333333;
+    color: white;
+    text-align: center;
+  }
 }/*# sourceMappingURL=main_tamplate.css.map */

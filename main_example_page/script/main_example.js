@@ -45,9 +45,7 @@ document.addEventListener("DOMContentLoaded", () => {
     );
   }
   function setActiveNavLink() {
-    var sections = document.querySelectorAll(
-      "#contact-form,#play_ground, #gallary, #aboutMe, #aboutThePage"
-    );
+    var sections = document.querySelectorAll("#contact-form ");
 
     sections.forEach(function (section) {
       var navLink = document.querySelector('a[href="#' + section.id + '"]');
