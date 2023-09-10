@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Game G</title>
+    <link rel="stylesheet" href="/css/main_tamplate.css" />
+  </head>
+
+  <body>
+    <button
+      class="mobile-nav-toggle"
+      aria-controls="theContent"
+      aria-expanded="false"
+    >
+      <svg
+        class="notInBigScreen"
+        width="72px"
+        height="72px"
+        viewBox="0 0 24 24"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+        stroke="#000000"
+      >
+        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+        <g
+          id="SVGRepo_tracerCarrier"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        ></g>
+        <g id="SVGRepo_iconCarrier">
+          <path
+            d="M20 7L4 7"
+            stroke="#1C274C"
+            stroke-width="1.5"
+            stroke-linecap="round"
+          ></path>
+          <path
+            opacity="0.5"
+            d="M20 12L4 12"
+            stroke="#1C274C"
+            stroke-width="1.5"
+            stroke-linecap="round"
+          ></path>
+          <path
+            d="M20 17L4 17"
+            stroke="#1C274C"
+            stroke-width="1.5"
+            stroke-linecap="round"
+          ></path>
+        </g>
+      </svg>
+    </button>
+    <header class="navBar" id="theContent" data-visible="false">
+      <div class="content">
+        <div class="logo">
+          <img src="/assest/profilepic.jpg" alt="" />
+
+          <h1>razi elyassin</h1>
+        </div>
+
+        <ul>
+          <li><a href="#contact-form">צור קשר</a></li>
+          <li><a href="/mainportfoli.html">לעמוד הבית</a></li>
+        </ul>
+      </div>
+    </header>
+    <div class="aboutThePage">
+      <h1>some header</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, aperiam
+        temporibus! Libero placeat doloribus officia eveniet odio quisquam
+        impedit autem harum vel rem! Consequuntur quaerat fugit aliquid
+        perspiciatis rerum exercitationem!
+      </p>
+      <div class="action">
+        <button class="pressable">game page</button
+        ><button class="pressable">link to download project</button>
+      </div>
+    </div>
+    <div class="codepics">
+      <img src="/assest/html.png" alt="html" />
+      <img src="/assest/css.png" alt="css" />
+      <img src="/assest/bootstrap.png" alt="bootstrap" />
+      <img src="/assest/js.png" alt="js" />
+    </div>
+    <div class="contactMe">
+      <div class="formSubmitted hidden" id="formSubmitted">
+        <h1>תודה שיצרת עמנו קשר</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi cumque
+          architecto perferendis cum optio nostrum placeat earum eligendi
+          sapiente ex incidunt harum, debitis quia recusandae dolorem id at
+          provident voluptate. Eveniet assumenda nesciunt non. Cum laboriosam
+          non numquam? Rem iste ut quo ab nam asperiores natus pariatur ullam
+          alias labore.
+        </p>
+      </div>
+      <div class="contact-form" id="contact-form">
+        <h1>טופס ליצירת קשר</h1>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente
+          nobis voluptates voluptate harum, cumque at suscipit dolore odit illo
+          fugit ad deleniti fuga incidunt? Ullam voluptas quas nostrum natus
+          odio.
+        </p>
+        <form action="" id="contactMe">
+          <label for="fulName">שם</label>
+          <input type="text" id="fullName" placeholder="שם" required />
+          <label for="" class="email">אימייל</label>
+          <input type="email" id="email" placeholder="מייל" required />
+          <label for="phoneNumber">מספר טלפון</label>
+          <input
+            id="phoneNumber"
+            type="tel"
+            placeholder="0512345678"
+            pattern="0[5-9]\d{8}|(\+|00)972[5-9]\d{8}"
+            required
+          />
+          <label for="textarea">טקטס פתוח לבקשת הפנייה</label>
+          <textarea
+            name=""
+            id="textarea"
+            cols="30"
+            rows="10"
+            class="last"
+            placeholder="טופס ליצירת קשר"
+          ></textarea>
+          <button type="submit" class="pressable">שליחה</button>
+        </form>
+      </div>
+    </div>
+    <script src="/main_example_page/script/main_example.js"></script>
+  </body>
+</html>

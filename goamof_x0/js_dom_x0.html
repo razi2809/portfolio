@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style/js_dom_xo.css" />
+  </head>
+
+  <body>
+    <div id="level" class="first">
+      <h1>how do we declare victory?</h1>
+      <div class="flex">
+        <button id="bestOf3" class="Btn">best of 3</button>
+        <button id="bestOf5" class="Btn">best of 5</button>
+      </div>
+    </div>
+    <div id="first" class="none">
+      <h1>who would you like to start?</h1>
+      <div class="flex">
+        <button id="x" class="Btn">x</button>
+        <button id="0" class="Btn">o</button>
+      </div>
+    </div>
+    <div class="table">
+      <h1>this is the curennt score</h1>
+      <div class="scroetable">
+        <h3>x</h3>
+        <h3>o</h3>
+      </div>
+      <div class="scroetable">
+        <div><h3 id="xScore">0</h3></div>
+        <div><h3 id="oScore">0</h3></div>
+      </div>
+    </div>
+    <div id="popup">
+      <button id="playAgainBtn" class="Btn">play again</button>
+      <h1 id="whoWon"></h1>
+    </div>
+    <div class="game-wrapper" id="gamerDiv">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+    <br /><br /><br />
+
+    <script src="./script/js_dom_xo.js"></script>
+  </body>
+</html>
