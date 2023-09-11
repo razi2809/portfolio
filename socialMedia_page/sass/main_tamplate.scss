@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@500&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+:root {
+    --background-button: #1ae0ec;
+    --backgrond-special:#72b7bb;
+    --bacckground-standart: #f3f3f3;
+    --ff-standart: 'Assistant', sans-serif;
+    --ff-special: 'Satisfy', cursive;
+}
+@media (min-width:900px) {
+    @import"navBar";
+    @import"homePage";
+}
+
+@media (max-width:900px) {
+    @import"navBarMobile";
+    @import"homePageMobile";
+}
