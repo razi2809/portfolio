@@ -1,5 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
   const contactForm = document.getElementById("contact-form");
+  const formVisible = document.getElementById("contact-form-visible");
   const formSubmitted = document.getElementById("formSubmitted");
 
   const form = document.getElementById("contactMe");
@@ -27,7 +28,7 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   function showFormSubmitted() {
-    contactForm.classList.add("hide");
+    formVisible.classList.add("hide");
     formSubmitted.classList.add("show");
   }
 
@@ -45,9 +46,7 @@ document.addEventListener("DOMContentLoaded", () => {
     );
   }
   function setActiveNavLink() {
-    var sections = document.querySelectorAll(
-      "#contact-form,#play_ground, #gallary, #aboutMe, #aboutThePage"
-    );
+    var sections = document.querySelectorAll("#contact-form ");
 
     sections.forEach(function (section) {
       var navLink = document.querySelector('a[href="#' + section.id + '"]');

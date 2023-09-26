@@ -1,14 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Assistant:wght@500&display=swap');
-@media (min-width:900px){
+@media (min-width:1100px){
     @import"homePage";
 @import"navBar";
 }
-@media (max-width:900px){
+@media (max-width:1100px){
     @import"navBarMobile";
     @import"homePageMobile";
 }
-@media (max-width: 1750px) and (min-width: 900px){
+@media (max-width: 1750px) and (min-width: 1100px){
     .projects {
         padding: 0;
     }

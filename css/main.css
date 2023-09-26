@@ -1,23 +1,24 @@
 @import url("https://fonts.googleapis.com/css2?family=Satisfy&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Assistant:wght@500&display=swap");
-@media (min-width: 900px) {
+@media (min-width: 1100px) {
   * {
     margin: 0;
     padding: 0;
     scroll-behavior: smooth;
   }
   .aboutThePage {
-    background: var(--background-button);
-    padding: 12em;
+    background-image: url("../assest/bg.jpg");
+    padding: 5em;
     display: flex;
     flex-direction: column;
   }
   .aboutThePage h1 {
     font-size: 6em;
+    font-family: var(--ff-special);
     align-self: center;
   }
   .aboutThePage p {
-    font-family: var(--ff-standart);
+    font-family: var(--ff-special);
     font-size: 1.5em;
     align-self: center;
     width: 70%;
@@ -43,8 +44,8 @@
     flex-direction: column;
     /* align-content: center; */
     align-items: center;
-    padding-top: 7em;
-    margin-bottom: 8em;
+    padding-top: 3em;
+    margin-bottom: 3em;
   }
   .aboutMe img {
     width: 12em;
@@ -58,7 +59,7 @@
   }
   .aboutMe p {
     width: 70%;
-    font-family: var(--ff-standart);
+    font-family: var(--ff-special);
     font-size: larger;
     margin: 1em;
   }
@@ -69,6 +70,10 @@
     border: none;
     cursor: pointer;
   }
+  .pressable h3,
+  .pressable h1 {
+    font-family: var(--ff-special);
+  }
   .pressable:hover {
     box-shadow: 2px 2px 5px 5px #888888;
   }
@@ -76,13 +81,13 @@
     text-decoration: none;
   }
   .projects {
-    background: var(--bacckground-standart);
     padding: 6em 27em;
     margin-top: 0;
   }
   .projects {
     display: grid;
     padding: 10em;
+    padding-bottom: 0;
     padding-top: 0;
     grid-template-areas: "header header header" " cards-1 cards-2 cards-3" "cards-4 cards-5 cards-6";
   }
@@ -92,7 +97,7 @@
     justify-self: center;
     margin-bottom: 1em;
     font-size: 3em;
-    margin-top: 1em;
+    font-family: var(--ff-special);
   }
   .cards-1 {
     grid-area: cards-1;
@@ -132,10 +137,18 @@
     overflow: hidden;
   }
   [class*=cards] .secondDiv {
-    padding: 1em 6em;
+    padding: 1em 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
-  [class*=cards] h2, [class*=cards] p {
+  [class*=cards] h2,
+  [class*=cards] p {
     padding: 0.3em;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    font-family: var(--ff-special);
   }
   [class*=cards] .img-container {
     width: 100%;
@@ -159,11 +172,9 @@
   }
   .contactMe {
     display: flex;
-    flex-direction: column;
     color: white;
-    padding-top: 7em;
-    padding-left: 50%;
-    padding-right: 10%;
+    padding-top: 5em;
+    padding-right: 30vw;
     padding-bottom: 0;
     justify-content: flex-end;
     align-items: flex-end;
@@ -192,7 +203,6 @@
   }
   .contactMe form {
     align-self: flex-end;
-    direction: rtl;
     padding: 2em;
   }
   .contactMe form input {
@@ -202,6 +212,12 @@
     margin-bottom: 2em;
     font-family: var(--ff-standart);
     font-size: 1em;
+  }
+  .contactMe form input ::-moz-placeholder {
+    font-family: var(--ff-special);
+  }
+  .contactMe form input ::placeholder {
+    font-family: var(--ff-special);
   }
   .contactMe .pressable {
     margin-top: 1em;
@@ -216,6 +232,7 @@
     font-family: var(--ff-standart);
   }
   .contactMe label {
+    font-family: var(--ff-special);
     display: block;
   }
   .formSubmitted {
@@ -224,18 +241,21 @@
     margin-top: 3em;
     margin-bottom: 10%;
   }
-  .formSubmitted h1, .formSubmitted p {
-    align-self: flex-end;
-    justify-self: flex-end;
+  .formSubmitted h1,
+  .formSubmitted p {
+    align-self: flex-start;
+    justify-self: flex-start;
     margin: 1.5em;
+    font-family: var(--ff-special);
   }
   .contact-form {
     display: flex;
     flex-direction: column;
   }
-  .contact-form h1, .contact-form p {
-    align-self: flex-end;
-    justify-self: flex-end;
+  .contact-form h1,
+  .contact-form p {
+    font-family: var(--ff-special);
+    text-align: center;
   }
   .last {
     font-family: var(--ff-standart);
@@ -278,8 +298,11 @@
     margin-left: 4em;
     margin-right: 2em;
   }
-  [class*=icon] a, [class*=icon] p {
+  [class*=icon] a,
+  [class*=icon] p {
     justify-self: center;
+    font-family: var(--ff-special);
+    text-align: center;
   }
   [class*=icon] a {
     display: flex;
@@ -291,12 +314,13 @@
     color: white;
     text-align: center;
   }
-  .gallary {
-    position: relative;
+  .credit p {
+    font-family: var(--ff-special);
   }
-  #gallary, #play_ground {
+  .gallary,
+  .play_ground {
     position: relative;
-    padding-top: 4em;
+    padding-top: 5em;
     background: var(--bacckground-standart);
   }
   ul li a.active {
@@ -314,6 +338,7 @@
     /* position: relative; */
     height: 5em;
     justify-content: center;
+    width: 100%;
   }
   .notInBigScreen,
   .mobile-nav-toggle {
@@ -340,6 +365,7 @@
     font-size: 1.875em;
     margin-left: 1em;
     font-family: var(--ff-special);
+    /* font-family: 'Courier New', Courier, monospace; */
   }
   .content ul {
     /* justify-self: flex-end; */
@@ -347,29 +373,30 @@
     /* background-color: var(--background); */
     display: flex;
     /* margin-left: 10%; */
-    width: 50%;
-    justify-content: flex-end;
+    width: 70%;
+    justify-content: flex-start;
     /* align-content: end; */
+    flex-direction: row-reverse;
   }
   .content li {
-    margin: 2em;
+    margin: 1em;
     display: flex;
   }
   .content li a {
     text-decoration: none;
     align-self: center;
-    transform: scale(1.5);
+    transform: scale(1.2);
     color: aquamarine;
     transition: transform 250ms ease-in-out;
     transform-origin: bottom;
-    font-family: var(--ff-standart);
+    font-family: var(--ff-special);
   }
   .content li a:hover {
     color: var(--background-button);
-    transform: scale(2);
+    transform: scale(1.5);
   }
 }
-@media (max-width: 900px) {
+@media (max-width: 1100px) {
   header {
     position: fixed;
     right: 0;
@@ -423,13 +450,14 @@
     /* bottom: 1em; */
     font-size: 1.875em;
     font-family: var(--ff-special);
+    /* font-family: 'Courier New', Courier, monospace; */
   }
   .content ul {
     /* justify-self: flex-end; */
     list-style-type: none;
     /* background-color: var(--background); */
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
     /* margin-left: 10%; */
     width: 100%;
     justify-content: flex-end;
@@ -443,10 +471,10 @@
     text-decoration: none;
     align-self: center;
     color: rgb(255, 152, 246);
-    transform: scale(1.5);
+    transform: scale(3);
     transition: transform 250ms ease-in-out;
     transform-origin: bottom;
-    font-family: var(--ff-standart);
+    font-family: var(--ff-special);
   }
   .content li a:hover {
     color: var(--background-button);
@@ -458,16 +486,20 @@
     scroll-behavior: smooth;
   }
   .aboutThePage {
-    background: var(--background-button);
+    background-image: url("../assest/bg.jpg");
     display: flex;
     flex-direction: column;
   }
   .aboutThePage h1 {
+    font-family: var(--ff-special);
     align-self: center;
     margin: 2em;
+    margin-bottom: 1em;
   }
   .aboutThePage p {
+    font-family: var(--ff-special);
     padding: 2em;
+    padding-top: 0;
   }
   .codepics {
     display: flex;
@@ -490,8 +522,8 @@
     flex-direction: column;
     /* align-content: center; */
     align-items: center;
-    padding-top: 7em;
-    margin-bottom: 8em;
+    padding-top: 3em;
+    margin-bottom: 3em;
   }
   .aboutMe img {
     width: 12em;
@@ -505,7 +537,7 @@
   }
   .aboutMe p {
     width: 70%;
-    font-family: var(--ff-standart);
+    font-family: var(--ff-special);
     font-size: larger;
     margin: 1em;
   }
@@ -515,6 +547,10 @@
     border-radius: 2em;
     border: none;
     cursor: pointer;
+  }
+  .pressable h3,
+  .pressable h1 {
+    font-family: var(--ff-special);
   }
   .pressable:hover {
     box-shadow: 2px 2px 5px 5px #888888;
@@ -535,9 +571,13 @@
     align-self: center;
     text-align: center;
     margin: 1em 0 1em 0;
+    font-family: var(--ff-special);
   }
-  .gallary {
+  .gallary,
+  .play_ground {
     position: relative;
+    padding-top: 2em;
+    background: var(--bacckground-standart);
   }
   /* #gallary,#play_ground{
       margin-top: 1%;
@@ -558,6 +598,8 @@
     overflow: hidden;
     transition: box-shadow 400ms ease-in-out;
     text-decoration: none;
+    height: fit-content;
+    width: 40em;
   }
   [class*=cards] .firstDiv {
     display: flex;
@@ -567,10 +609,18 @@
     overflow: hidden;
   }
   [class*=cards] .secondDiv {
-    padding: 1em 6em;
+    padding: 1em 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
-  [class*=cards] h2, [class*=cards] p {
+  [class*=cards] h2,
+  [class*=cards] p {
     padding: 0.3em;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    font-family: var(--ff-special);
   }
   [class*=cards] .img-container {
     width: 100%;
@@ -578,6 +628,7 @@
   }
   [class*=cards] img {
     width: 100%;
+    height: 100%;
     transform: scale(1);
     transition: transform 400ms ease-in-out, filter 400ms ease-in-out;
   }
@@ -593,11 +644,8 @@
   }
   .contactMe {
     display: flex;
-    flex-direction: column;
     color: white;
-    padding-top: 7em;
-    padding-left: 50%;
-    padding-right: 10%;
+    padding-top: 5em;
     padding-bottom: 0;
     justify-content: flex-end;
     align-items: flex-end;
@@ -622,20 +670,25 @@
     /* Push the pseudo-element behind the content */
   }
   .contactMe p {
-    width: 22rem;
+    width: 38em;
   }
   .contactMe form {
     align-self: flex-end;
-    direction: rtl;
     padding: 2em;
   }
   .contactMe form input {
     display: block;
-    width: 17em;
+    width: 50vw;
     padding: 1em;
     margin-bottom: 2em;
     font-family: var(--ff-standart);
     font-size: 1em;
+  }
+  .contactMe form input ::-moz-placeholder {
+    font-family: var(--ff-special);
+  }
+  .contactMe form input ::placeholder {
+    font-family: var(--ff-special);
   }
   .contactMe .pressable {
     margin-top: 1em;
@@ -650,6 +703,7 @@
     font-family: var(--ff-standart);
   }
   .contactMe label {
+    font-family: var(--ff-special);
     display: block;
   }
   .formSubmitted {
@@ -658,29 +712,32 @@
     margin-top: 3em;
     margin-bottom: 10%;
   }
-  .formSubmitted h1, .formSubmitted p {
-    align-self: flex-end;
-    justify-self: flex-end;
+  .formSubmitted h1,
+  .formSubmitted p {
+    align-self: flex-start;
+    justify-self: flex-start;
     margin: 1.5em;
+    font-family: var(--ff-special);
   }
   .contact-form {
     display: flex;
     flex-direction: column;
   }
-  .contact-form h1, .contact-form p {
-    align-self: flex-end;
-    justify-self: flex-end;
+  .contact-form h1,
+  .contact-form p {
+    font-family: var(--ff-special);
+    text-align: center;
   }
   .last {
     font-family: var(--ff-standart);
-    width: 20em;
+    width: 75vw;
     height: 5em;
     font-size: 1em;
   }
   .formSubmitted {
     position: absolute;
     top: 20%;
-    left: 10%;
+    left: 30%;
     transform: scale(0);
     pointer-events: none;
     transition: transform 0.3s ease-in-out 0.4s;
@@ -712,7 +769,8 @@
     flex-direction: column;
     margin-right: 2em;
   }
-  [class*=icon] a, [class*=icon] p {
+  [class*=icon] a,
+  [class*=icon] p {
     justify-self: center;
     text-align: center;
   }
@@ -721,13 +779,15 @@
     justify-content: center;
   }
   .credit {
-    font-family: var(--ff-standart);
     background: #333333;
     color: white;
     text-align: center;
   }
+  .credit p {
+    font-family: var(--ff-special);
+  }
 }
-@media (max-width: 1750px) and (min-width: 900px) {
+@media (max-width: 1750px) and (min-width: 1100px) {
   .projects {
     padding: 0;
   }

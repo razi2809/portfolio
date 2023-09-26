@@ -1,0 +1,21 @@
+.tempMetric{
+vertical-align: top;
+}
+.tempInfo{
+    display: flex;
+    justify-content: space-evenly;
+}
+.areaInfo{
+    display: flex;
+    justify-content: space-evenly;
+}
+.cityName{
+display: flex;
+justify-content: flex-start;
+}
+#btnPlace{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: fit-content;
+}

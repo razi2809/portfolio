@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style/bingo.css" />
+  </head>
+  <body>
+    <div id="popup" class="none">
+      <button id="playAgainBtn" class="Btn">play again</button>
+      <h1 id="whoWon"></h1>
+    </div>
+    <div class="gameOperation">
+      <button id="shuffle" class="Btn">suffle The Ball</button>
+      <div id="suffledNum" class="hidden"><h1>0</h1></div>
+    </div>
+    <div class="container">
+      <div class="wrapper-user" id="wrapper-user">
+        <h1>your board</h1>
+        <div class="game">
+          <div class="geamebord">
+            <div class="box">
+              <input type="text" class="userInput" maxlength="1" disabled />
+            </div>
+            <div class="box">
+              <input type="text" class="userInput" maxlength="1" disabled />
+            </div>
+            <div class="box">
+              <input type="text" class="userInput" maxlength="1" disabled />
+            </div>
+            <div class="box">
+              <input type="text" class="userInput" maxlength="1" disabled />
+            </div>
+            <div class="box">
+              <input type="text" class="userInput" maxlength="1" disabled />
+            </div>
+          </div>
+          <div class="geamebord">
+            <div class="box">
+              <input type="text" class="userInput" maxlength="1" disabled />
+            </div>
+            <div class="box">
+              <input type="text" class="userInput" maxlength="1" disabled />
+            </div>
+            <div class="box">
+              <input type="text" class="userInput" maxlength="1" disabled />
+            </div>
+            <div class="box">
+              <input type="text" class="userInput" maxlength="1" disabled />
+            </div>
+            <div class="box">
+              <input type="text" class="userInput" maxlength="1" disabled />
+            </div>
+          </div>
+          <div class="geamebord">
+            <div class="box">
+              <input type="text" class="userInput" maxlength="1" disabled />
+            </div>
+            <div class="box">
+              <input type="text" class="userInput" maxlength="1" disabled />
+            </div>
+            <div class="box">
+              <input type="text" class="userInput" maxlength="1" disabled />
+            </div>
+            <div class="box">
+              <input type="text" class="userInput" maxlength="1" disabled />
+            </div>
+            <div class="box">
+              <input type="text" class="userInput" maxlength="1" disabled />
+            </div>
+          </div>
+          <div class="geamebord">
+            <div class="box">
+              <input type="text" class="userInput" maxlength="1" disabled />
+            </div>
+            <div class="box">
+              <input type="text" class="userInput" maxlength="1" disabled />
+            </div>
+            <div class="box">
+              <input type="text" class="userInput" maxlength="1" disabled />
+            </div>
+            <div class="box">
+              <input type="text" class="userInput" maxlength="1" disabled />
+            </div>
+            <div class="box">
+              <input type="text" class="userInput" maxlength="1" disabled />
+            </div>
+          </div>
+          <div class="geamebord">
+            <div class="box">
+              <input type="text" class="userInput" maxlength="1" disabled />
+            </div>
+            <div class="box">
+              <input type="text" class="userInput" maxlength="1" disabled />
+            </div>
+            <div class="box">
+              <input type="text" class="userInput" maxlength="1" disabled />
+            </div>
+            <div class="box">
+              <input type="text" class="userInput" maxlength="1" disabled />
+            </div>
+            <div class="box">
+              <input type="text" class="userInput" maxlength="1" disabled />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="wrapper-comp" id="wrapper-comp">
+       <h1>computer board</h1>
+        <div class="game">
+                <div class="geamebord">
+          <div class="box">
+            <input type="text" class="userInput" maxlength="1" disabled />
+          </div>
+          <div class="box">
+            <input type="text" class="userInput" maxlength="1" disabled />
+          </div>
+          <div class="box">
+            <input type="text" class="userInput" maxlength="1" disabled />
+          </div>
+          <div class="box">
+            <input type="text" class="userInput" maxlength="1" disabled />
+          </div>
+          <div class="box">
+            <input type="text" class="userInput" maxlength="1" disabled />
+          </div>
+        </div>
+        <div class="geamebord">
+          <div class="box">
+            <input type="text" class="userInput" maxlength="1" disabled />
+          </div>
+          <div class="box">
+            <input type="text" class="userInput" maxlength="1" disabled />
+          </div>
+          <div class="box">
+            <input type="text" class="userInput" maxlength="1" disabled />
+          </div>
+          <div class="box">
+            <input type="text" class="userInput" maxlength="1" disabled />
+          </div>
+          <div class="box">
+            <input type="text" class="userInput" maxlength="1" disabled />
+          </div>
+        </div>
+        <div class="geamebord">
+          <div class="box">
+            <input type="text" class="userInput" maxlength="1" disabled />
+          </div>
+          <div class="box">
+            <input type="text" class="userInput" maxlength="1" disabled />
+          </div>
+          <div class="box">
+            <input type="text" class="userInput" maxlength="1" disabled />
+          </div>
+          <div class="box">
+            <input type="text" class="userInput" maxlength="1" disabled />
+          </div>
+          <div class="box">
+            <input type="text" class="userInput" maxlength="1" disabled />
+          </div>
+        </div>
+        <div class="geamebord">
+          <div class="box">
+            <input type="text" class="userInput" maxlength="1" disabled />
+          </div>
+          <div class="box">
+            <input type="text" class="userInput" maxlength="1" disabled />
+          </div>
+          <div class="box">
+            <input type="text" class="userInput" maxlength="1" disabled />
+          </div>
+          <div class="box">
+            <input type="text" class="userInput" maxlength="1" disabled />
+          </div>
+          <div class="box">
+            <input type="text" class="userInput" maxlength="1" disabled />
+          </div>
+        </div>
+        <div class="geamebord">
+          <div class="box">
+            <input type="text" class="userInput" maxlength="1" disabled />
+          </div>
+          <div class="box">
+            <input type="text" class="userInput" maxlength="1" disabled />
+          </div>
+          <div class="box">
+            <input type="text" class="userInput" maxlength="1" disabled />
+          </div>
+          <div class="box">
+            <input type="text" class="userInput" maxlength="1" disabled />
+          </div>
+          <div class="box">
+            <input type="text" class="userInput" maxlength="1" disabled />
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./script/bingo.js"></script>
+  </body>
+</html>

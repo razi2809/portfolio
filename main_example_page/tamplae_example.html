@@ -54,14 +54,16 @@
     <header class="navBar" id="theContent" data-visible="false">
       <div class="content">
         <div class="logo">
-          <img src="/assest/profilepic.jpg" alt="" />
+          <a href="../mainportfoli.html"
+            ><img src="/assest/profilepic.jpg" alt=""
+          /></a>
 
           <h1>razi elyassin</h1>
         </div>
 
         <ul>
-          <li><a href="#contact-form">צור קשר</a></li>
-          <li><a href="/mainportfoli.html">לעמוד הבית</a></li>
+          <li><a href="/mainportfoli.html">home</a></li>
+          <li><a href="#contact-form">contact me</a></li>
         </ul>
       </div>
     </header>
@@ -89,9 +91,9 @@
     <div class="gallary">
       <img src="/assest/Play-Center-Game-–-42.png" alt="" />
     </div>
-    <div class="contactMe">
+    <div class="contactMe" id="contact-form">
       <div class="formSubmitted hidden" id="formSubmitted">
-        <h1>תודה שיצרת עמנו קשר</h1>
+        <h1>thank for contacing us</h1>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi cumque
           architecto perferendis cum optio nostrum placeat earum eligendi
@@ -101,8 +103,8 @@
           alias labore.
         </p>
       </div>
-      <div class="contact-form" id="contact-form">
-        <h1>טופס ליצירת קשר</h1>
+      <div class="contact-form" id="contact-form-visible">
+        <h1>contact me</h1>
         <p>
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente
           nobis voluptates voluptate harum, cumque at suscipit dolore odit illo
@@ -110,11 +112,16 @@
           odio.
         </p>
         <form action="" id="contactMe">
-          <label for="fulName">שם</label>
-          <input type="text" id="fullName" placeholder="שם" required />
-          <label for="" class="email">אימייל</label>
-          <input type="email" id="email" placeholder="מייל" required />
-          <label for="phoneNumber">מספר טלפון</label>
+          <label for="fulName">name</label>
+          <input type="text" id="fullName" placeholder="name" required />
+          <label for="" class="email">email</label>
+          <input
+            type="email"
+            id="email"
+            placeholder="israel@israeli.com"
+            required
+          />
+          <label for="phoneNumber">phone number</label>
           <input
             id="phoneNumber"
             type="tel"
@@ -122,16 +129,16 @@
             pattern="0[5-9]\d{8}|(\+|00)972[5-9]\d{8}"
             required
           />
-          <label for="textarea">טקטס פתוח לבקשת הפנייה</label>
+          <label for="textarea">free to fill</label>
           <textarea
             name=""
             id="textarea"
             cols="30"
             rows="10"
             class="last"
-            placeholder="טופס ליצירת קשר"
+            placeholder="context"
           ></textarea>
-          <button type="submit" class="pressable">שליחה</button>
+          <button type="submit" class="pressable"><h3>send</h3></button>
         </form>
       </div>
     </div>
@@ -342,7 +349,7 @@
       </div>
     </div>
     <div class="credit">
-      <p>כל הזכויות שמורות לרזי אליסין</p>
+      <p>all rights to razi alyassin</p>
     </div>
     <script src="/main_example_page/script/main_example.js"></script>
   </body>
